@@ -64,7 +64,7 @@
       <h1>
         Choose from Our Best collection
       </h1>
-       <section id="cards-section" class="cards-container">
+       <div id="cards-section" class="cards-container">
         <router-link v-for="card in cards" :key="card.id" :to="{name:'CardDetail', params:{id: card.id}}">
         <div class="card">
         <img :src="card.image1" alt="No Image Found">
@@ -74,7 +74,7 @@
         </div>
       </div>
     </router-link>
-      </section>   
+  </div>   
       
 
 
@@ -98,10 +98,22 @@
 </template>
 
 <style>
-#tab-es6{
-  height: 100%;
-  top:0
+.et-main{
+  display: flex;
+  flex-direction: column;
 }
+#tab-es6{
+  height: 80%;
+  width: 100%;
+  top:0;
+  background-color: white;
+  
+}
+/* #tab-flexbox{
+  position: absolute;
+  min-height: 80vh;
+  width: 100%;
+} */
         body {
             font-family: "Century Gothic", 'Lato', sans-serif;
             background-color: #fff;
@@ -111,17 +123,18 @@
         text-decoration: none;
     }
     
-    .et-hero-tabs,
     .et-slide {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 80vh;
+        min-height: 100vh;
         height: 100vh;
         position: relative;
+        width: 100%;
+        padding-top: 10%;
+
             text-align: center;
-            padding: 0 2em;
         h1 {
           font-size: clamp(2rem, 5vw, 3rem);
             margin-top: 2%;
@@ -132,7 +145,6 @@
             letter-spacing: 0.3rem;
             opacity: 0.6;
         }
-        margin-top: 2%;
     }
     
     .et-hero-tabs-container {
@@ -144,6 +156,7 @@
         height: 10%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         background: #fff;
+        z-index: 10;
        
     }
     .et-hero-tabs-container--top {
@@ -169,7 +182,7 @@
             transition: all 0.5s ease;
             font-size: 0.8rem;
           &:hover {
-                color:white;
+                color:rgb(0, 0, 0);
           background: rgba(102,177,241,0.8);
                 transition: all 0.5s ease;
         }
@@ -351,7 +364,6 @@
 }
 .Celebrities {
   font-family: "Ysabeau SC";
-padding-bottom: 10%;
 color: white;
 position: relative;}
 .overlay {
@@ -389,7 +401,7 @@ position: relative;}
 }
 
 .Video-player{
-  width: 103%; 
+  width: 100%; 
   height: 100%;
   object-fit: cover;
 }    
