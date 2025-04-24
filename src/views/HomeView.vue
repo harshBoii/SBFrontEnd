@@ -98,8 +98,13 @@
 </template>
 
 <style>
+#tab-es6{
+  height: 100%;
+  top:0
+}
         body {
             font-family: "Century Gothic", 'Lato', sans-serif;
+            background-color: #fff;
     }
     
     a {
@@ -224,6 +229,7 @@
         width: 50%;
         height: 50%;
         z-index: -1;
+        background-color: aliceblue;
       }
     .cards-container {
       margin-top: 1%;
@@ -231,7 +237,7 @@
       flex-wrap: wrap;
       gap: 0.5%;
       justify-content: center;
-      padding: 2%;
+      padding: 1%;
     }
     .card {
       width: 300px;
@@ -276,6 +282,7 @@
   justify-content: center;
   height: 500px;
   gap: 10px;
+  margin-bottom: 20%;
 
   > div {
     flex: 0 0 330px;
@@ -345,7 +352,7 @@
 .Celebrities {
   font-family: "Ysabeau SC";
 padding-bottom: 10%;
-color: black;
+color: white;
 position: relative;}
 .overlay {
   background: white;
@@ -363,21 +370,22 @@ position: relative;}
   position: relative;
   font-family: 'Playfair Display', serif;
   opacity: 0.5;
-  margin-top: 2%;
+  margin-top: 0%;
   top: 0;
 }
 .marquee-content {
   display: inline-block;
   white-space: nowrap; /* Prevents text from wrapping */
   color: rosybrown;
-  font-size: 2rem;
+  font-size: 95%;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   animation: marquee 50s linear infinite;
+  margin-top: 0%;
 }
 @keyframes marquee {
   0% { transform: translateX(30%); }
-  50%{ transform: translate(-100%);}
+  50%{ transform: translateX(-100%);}
 }
 
 .Video-player{
