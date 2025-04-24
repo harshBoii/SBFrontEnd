@@ -53,14 +53,14 @@
             </div>
           </div>
     </section>
-    <div class="marquee-container">
+  
+    <section class="et-slide" id="tab-flexbox">
+      <div class="marquee-container">
       <div class="marquee-content">
         FLASH SALE: Save 30% on All Gold Jewellery! | Exclusive Offer: Buy One, Get One 50% Off on Diamond Earrings! | FREE Shipping on Orders Over $200! | Limited Time: 20% Off New Arrivals! | Members Only: Extra 10% Off on Luxury Rings! | Hot Deal: Save Up to 40% on Selected Pieces! | Special Offer: Complimentary Gift with Every Purchase! | Hurry! Limited Stock on Our Premium Collections!
       </div>
     </div>
-  
-    <section class="et-slide" id="tab-flexbox">
-      
+
       <h1>
         Choose from Our Best collection
       </h1>
@@ -112,17 +112,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 80vh;
         height: 100vh;
         position: relative;
             text-align: center;
             padding: 0 2em;
         h1 {
-            font-size: 2rem;
+          font-size: clamp(2rem, 5vw, 3rem);
             margin: 0;
             letter-spacing: 1rem;
         }
         h3 {
-            font-size: 1rem;
+          font-size: clamp(1rem, 2vw, 1.25rem);
             letter-spacing: 0.3rem;
             opacity: 0.6;
         }
@@ -134,16 +135,15 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 70px;
+        height: 10%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         background: #fff;
-        z-index: 10;
        
     }
     .et-hero-tabs-container--top {
         bottom: 0;
         width: 100%;
-        height: 70px;
+        height: 10%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         background: #fff;
         z-index: 10;
@@ -157,7 +157,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex: 1;
+        flex: 0.8%;
         color: #000;
         letter-spacing: 0.1rem;
             transition: all 0.5s ease;
@@ -356,11 +356,13 @@ position: relative;}
   width: 100%;
   overflow: hidden;  /* Hides overflowing content */
   background:#1e0e3e;
-  padding: 10px 0;
+  padding: 2% 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;
   font-family: 'Playfair Display', serif;
   opacity: 0.5;
+  margin-top: 2%;
+  top: 0;
 }
 .marquee-content {
   display: inline-block;
