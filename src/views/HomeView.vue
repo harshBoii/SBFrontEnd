@@ -119,7 +119,7 @@
             padding: 0 2em;
         h1 {
           font-size: clamp(2rem, 5vw, 3rem);
-            margin: 0;
+            margin-top: 2%;
             letter-spacing: 1rem;
         }
         h3 {
@@ -127,6 +127,7 @@
             letter-spacing: 0.3rem;
             opacity: 0.6;
         }
+        margin-top: 2%;
     }
     
     .et-hero-tabs-container {
@@ -225,11 +226,12 @@
         z-index: -1;
       }
     .cards-container {
+      margin-top: 1%;
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 0.5%;
       justify-content: center;
-      padding: 20px;
+      padding: 2%;
     }
     .card {
       width: 300px;

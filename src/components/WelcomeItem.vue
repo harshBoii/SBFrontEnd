@@ -36,13 +36,13 @@ const text=document.querySelector('.text');
 .separator{
 margin-left: 8%;
 color: rgb(162, 0, 0);
-font-size: 16px;
-margin-bottom: 35px;
+font-size: 4%;
+margin-bottom: 5%;
 }
 .cont{
     display: block;
-    padding-top:7px;
-    padding-bottom:10px;
+    padding-top:1%;
+    padding-bottom:3%;
     text-align: center;
     margin-top:60% ;
     border-style: ridge ;
@@ -53,34 +53,34 @@ margin-bottom: 35px;
 }
 .cont:hover{
     background-color:  rgb(149, 13, 13);
-    border:1.5px inset rgb(149, 13, 13) ;
+    border:1% inset rgb(149, 13, 13) ;
 }
 /* .cont:visited, .cont:active,.cont:focus{
   text-decoration: none;
   color: inherit;
 } */
 #lable {
-    font-size: 15px;
+    font-size: 3%;
     font-weight: bold;
     color: black;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:1.3%;
+    padding-bottom:1.3%;
 }
 .pi{
     color:#FFD700
 }
 .pi-spin{
-    padding-bottom:10px ;
-    margin-bottom:15px ;
+    padding-bottom:20% ;
+    margin-bottom:20% ;
 }
 .pi:hover{
     color:#B8860B ;
-    transform: translateX(10px) 0.5s ease-out;
+    transform: translateX(2.5%) 0.5s ease-out;
 
 }
 .text{
     color: black;
-    font-size: 13px;
+    font-size: 80%;
     font-family: '';
 }
 

@@ -39,7 +39,7 @@
 
         <h1 class="head" style="font-family: 'Agu Display' ;"> Swarnabhushana</h1>
         <div id="container">
-            <div class="main">  	
+        <div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
@@ -68,7 +68,7 @@
     </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .glowSign{
     text-shadow: 0 5px 20px #000000;
 }
@@ -221,8 +221,159 @@ button:hover{
 	transform: scale(.6);
 }
 
-</style>
+</style> -->
 
+<style scoped>
+.glowSign{
+    text-shadow: 0 0.56vh 2.22vh #000000;
+}
+.glow{
+    text-shadow: 0 0.56vh 2.22vh #e8b32e;
+}
+.login,.signup{
+    font-size: 2.89vh;
+    font-family: 'Quicksand';
+}
+.label{
+    font-size: 1.56vh;
+    font-family: 'Quicksand';
+}
+#left {
+    width: 41%;
+    height: 100%;
+    background-color: #2E294E ;
+    position: fixed;
+    left: 4%;
+    font-size: 2.22vh;
+    border: 0.22vh solid #D4AF37;
+}
+.Desc {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    font-family: 'Quicksand';
+    color: #f7e256;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.89vh;
+}
+.head{
+    font-family: 'Pacifico';
+    font-size: 5.56vh;
+    color: #f6cc41;
+    text-align: center;
+    margin-bottom: 2.78%;
+    text-shadow: 0.0vh 0.0vh 2.22vh #ffd752;
+}
+.logo-container {
+    display: flex;
+    height: 26.67vh;
+    width: 16.67%;
+    margin-left: 28%;
+    margin-top: 3.47%;
+}
+
+#right {
+    width: 55%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    font-size: 2.22vh;
+    border-left: 0.14% solid #D4AF37;
+}
+#container {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: White;
+    left: 25%;
+    top: 25%;
+    font-size: 2.22vh;
+}
+
+.main{
+    width: 94.31%;
+    height: 45.56vh;
+    background: red;
+    overflow: hidden;
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/cover;
+    border-radius: 1.11vh;
+    box-shadow: 0.56vh 2.22vh 5.56vh #e7e412b9;
+    margin-left: 10%;
+}
+#chk{
+    display: none;
+}
+.signup{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+label{
+    color: #ffe942;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 3.47%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+input{
+    width: 60%;
+    height: 3.11vh;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 1.39% auto;
+    padding: 0.83%;
+    border: none;
+    outline: none;
+    border-radius: 0.56vh;
+}
+button{
+    width: 60%;
+    height: 4.44vh;
+    margin: 0.69% auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #f7e256;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 2.08%;
+    outline: none;
+    border: none;
+    border-radius: 0.56vh;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(128, 0, 0);
+}
+.login{
+    height: 55.56vh;
+    background: #2E294E;
+    border-radius: 60% / 10%;
+    transform: translateY(-13.89vh);
+    transition: .8s ease-in-out;
+}
+.login label{
+    color:#f7e256;;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-47.11vh);
+}
+#chk:checked ~ .login label{
+    transform: scale(1); 
+}
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
+</style>
 
 
 <script setup>
