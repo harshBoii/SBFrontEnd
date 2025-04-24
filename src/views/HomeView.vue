@@ -101,6 +101,7 @@
 .et-main{
   display: flex;
   flex-direction: column;
+  padding-bottom:10% ;
 }
 #tab-es6{
   height: 80%;
@@ -151,12 +152,12 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        bottom: 0;
         width: 100%;
         height: 10%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         background: #fff;
-        z-index: 10;
+        z-index: 5;
+        
        
     }
     .et-hero-tabs-container--top {
@@ -253,7 +254,8 @@
       padding: 1%;
     }
     .card {
-      width: 300px;
+      width: 20vw;
+      height: 100%;
       border: 1px solid #ddd;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -364,7 +366,7 @@
 }
 .Celebrities {
   font-family: "Ysabeau SC";
-color: white;
+color: rgb(0, 0, 0);
 position: relative;}
 .overlay {
   background: white;

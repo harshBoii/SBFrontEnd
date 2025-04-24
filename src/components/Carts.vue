@@ -110,8 +110,9 @@ methods:{}
 }
 
 .text{
-    width: 80%;
-    height: 200px;
+    width: 100%;
+    height: 20%;
+    font-size: 1.6vh;
 }
 
 .text:hover{
@@ -162,7 +163,7 @@ methods:{}
 
 }
  #Info{
-    font-size: 20px;
+    font-size: clamp(1vh,3vh,2vh);
     background-color: white ;
     color: black;
     box-shadow: 0 4px 8px rgb(254, 254, 0);

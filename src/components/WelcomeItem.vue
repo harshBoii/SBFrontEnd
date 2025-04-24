@@ -18,7 +18,7 @@ const text=document.querySelector('.text');
 </script>
 
 <template>
-
+    
 <i class="pi pi-spin pi-sun" style="font-size: 2rem"></i>
  <div class="text">Hey SunShine!
  </div>
@@ -30,9 +30,15 @@ const text=document.querySelector('.text');
    <i :class="icons[index]" style="font-size: 2rem"></i>
    <div class="text"> {{labels[index]}}</div>
 </router-link>
+
 </template>
 
-<style>
+<style scoped>
+/* body{
+    height: 100%;
+    width: 2;
+    position: fixed;
+} */
 .separator{
 margin-left: 8%;
 color: rgb(162, 0, 0);
@@ -40,7 +46,8 @@ font-size: 4%;
 margin-bottom: 5%;
 }
 .cont{
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top:1%;
     padding-bottom:3%;
     text-align: center;
@@ -50,6 +57,10 @@ margin-bottom: 5%;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    height: 8%;
+    font-size: clamp(0.1rem,0.65rem,3rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .cont:hover{
     background-color:  rgb(149, 13, 13);
@@ -80,8 +91,9 @@ margin-bottom: 5%;
 }
 .text{
     color: black;
-    font-size: 80%;
-    font-family: '';
+    display: contain;
+
+    
 }
 
 @media (max_width:768px){

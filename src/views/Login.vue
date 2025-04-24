@@ -270,7 +270,7 @@ button:hover{
     display: flex;
     height: 26.67vh;
     width: 16.67%;
-    margin-left: 28%;
+    margin-left: 45%;
     margin-top: 3.47%;
 }
 

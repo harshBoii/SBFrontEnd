@@ -116,18 +116,18 @@ export default{
 
 </div>
  
-
-
-</div>
 <div id="LB">
   <button class="details1" @click="removeProduct">- One Item</button>
   <button class="details1" @click="AddCart">Add To Cart</button>
 
 </div>
+
+
+</div>
   
   <div class="right">
     <div class="details">
-    <h1 style="font-family: 'Dosis';font-size:35px;text-align: center;"> Jewellery <span>Details</span></h1>
+    <h1 style="font-family: 'Dosis';font-size:7vh;text-align: center;"> Jewellery <span>Details</span></h1>
     
   </div>
   <div class="content">
@@ -159,7 +159,7 @@ export default{
     left: 7%;
     top:23%;
     width: 35%;
-    height: 500px;
+    height: 70vh;
     align-self: center;
     position: absolute;
     border: 2px solid gold;
@@ -230,6 +230,7 @@ display: flex;}
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
+  margin-top: 5%;
 
 }
 
@@ -247,9 +248,9 @@ display: flex;}
 
 #LB{
   width: 25%;
-  height: 50px;
-  position: absolute;
-  bottom: 12%;
+  height: 7%;
+  position: fixed;
+  bottom: 10%;
   left: 12%;
   right: 50%;
   display: flex;
@@ -262,14 +263,14 @@ display: flex;}
   border-radius: 25px;
   background: linear-gradient(180deg, rgb(205, 187, 88) 0%, rgb(255, 217, 0) 100%); /* Gradient effect */
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.6vh 1vh rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
-  width: 150px;
+  width: 80%;
   text-align: center;
   justify-content: center;
-  font-size: 25px;
-  margin-left: 20px;
-  font-family: 'Dosis'
+  font-size: 120%;
+  margin-left: 8%;
+  font-family: 'Dosis';
 
 }
 .details1:hover{
