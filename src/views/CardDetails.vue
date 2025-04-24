@@ -25,7 +25,7 @@ export default{
       try {
         const token = localStorage.getItem('Token');
         
-        const response = await fetch('http://127.0.0.1:5000/api/Cart', {
+        const response = await fetch('https://swarnabhushan.onrender.com/api/Cart', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default{
       
         const token = localStorage.getItem('Token');
         
-        const response = await fetch('http://127.0.0.1:5000/api/DelCart',{
+        const response = await fetch('https://swarnabhushan.onrender.com/api/DelCart',{
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

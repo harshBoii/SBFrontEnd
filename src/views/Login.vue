@@ -258,7 +258,7 @@ async function Login(){
     const email=document.querySelector('input[name="email"]').value;
     const password=document.querySelector('input[name="pswd"]').value;
 
-    const res=await fetch('http://127.0.0.1:5000/api/Login',{
+    const res=await fetch('https://swarnabhushan.onrender.com/api/Login',{
         method:'POST',
         headers: {
                 'Content-Type': 'application/json'
@@ -289,7 +289,7 @@ async function Signup(){
     const password=document.querySelector('input[name="newpswd"]').value;
     const number=document.querySelector('input[name="number"]').value;
     const address=document.querySelector('input[name="address"]').value;
-    const res = await fetch('http://127.0.0.1:5000/api/Signup',{
+    const res = await fetch('https://swarnabhushan.onrender.com/api/Signup',{
         method:'post',
         headers: {
                 'Content-Type': 'application/json'

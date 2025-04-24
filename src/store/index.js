@@ -20,12 +20,12 @@ const store = createStore({
    },
    actions:{
     async fetchProducts({commit}){
-      const response= await fetch('http://127.0.0.1:5000/api/cards')
+      const response= await fetch('https://swarnabhushan.onrender.com/api/cards')
       const data= await response.json()
       commit('setItems',data)
     },
     async getCart({commit}){
-      const response = await fetch('http://127.0.0.1:5000/api/getcart',{
+      const response = await fetch('https://swarnabhushan.onrender.com/api/getcart',{
         method:'GET',
         headers:{
           'Content-Type':'application/json',
