@@ -96,7 +96,7 @@ body {
     .Left {
   position: fixed;
   float: left;
-  width: 10%;
+  width: 15%;
   height: 100%;
   z-index: 100;
   background-color: white;

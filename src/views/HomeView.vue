@@ -410,7 +410,7 @@ position: relative;}
 
 @media (max-width:784px){
   .Video-player{
-    width: 103%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -421,13 +421,13 @@ position: relative;}
     height: auto;
   }
   .et-slide h1 {
-    font-size: 2rem;
+    font-size: 3vh;
   }
   .et-slide h3 {
-    font-size: 1rem;
+    font-size: 1vh;
   }
   .et-hero-tab {
-    font-size: 0.8rem;
+    font-size: 1vh;
   }
   .card{
     flex: 1 1 0;
@@ -452,8 +452,8 @@ position: relative;}
   .container {
   display: flex;
   justify-content: center;
-  height: 200px;
-  gap: 10px;
+  height: 30vh;
+  gap: 3vw;
 
   > div {
     flex: 0 20 200px;
@@ -508,7 +508,7 @@ position: relative;}
       
     }
     &:hover {
-      flex: 0 0 250px;
+      flex: 0 0 30vh;
       box-shadow: 1px 3px 15px #f5ea16;
       transform: translatey(-30px);
       background-position:center 20% ;
@@ -521,6 +521,18 @@ position: relative;}
     }
   }
 }
+.card{
+  width: 80vw;
+  margin-left: 5%;
+
+}
+
+.et-slide{
+  h1{
+    margin-left: 8%;
+  }
+}
+
 }
 </style>
 

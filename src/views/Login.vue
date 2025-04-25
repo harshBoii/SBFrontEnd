@@ -373,7 +373,30 @@ button:hover{
 #chk:checked ~ .signup label{
     transform: scale(.6);
 }
-</style>
+
+@media (max-width:768px){
+    #left{
+        visibility: hidden;
+    }
+    #right{
+        width: 100%;
+    }
+    .signup{
+        width: 100%;
+        text-align: center;
+    }
+    .main{
+        height: 53vh;
+        width: 60vw;
+        margin-left:0 ;
+    }
+    input{
+        height: 5vh;
+    }
+    .label{
+        font-size: 1.4vh;
+    }
+}</style>
 
 
 <script setup>

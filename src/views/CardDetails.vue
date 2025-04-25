@@ -81,6 +81,8 @@ export default{
 
 <template>
 
+<div class="Overlay">
+
  <div class="top"> 
   <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand">Swarn-Abhushana</a>
@@ -151,7 +153,7 @@ export default{
     </div>
 
   </div>
-   
+</div>
 </template>
 
 <style scoped>
@@ -286,5 +288,51 @@ display: flex;}
 body{
   background-color: #f7d8b0 ;
   z-index: 100;
+}
+@media (max-width:768px){
+  .Overlay{
+    display: flex;
+    flex-direction: row;
+  }
+  .top{
+    width: 86%;
+    left:16.5%
+  }
+  .left{
+    left: 25%;
+    top:23%;
+    width: 70%;
+    align-self: center;
+    position: absolute;
+    border: 2px solid gold;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.right{
+    width: 70%;
+    align-self: center;
+    top:100%;
+    left :23%
+}
+
+
+#LB{
+  width: 85%;
+  height: 7%;
+  position: fixed;
+  bottom: 10%;
+  left: 12%;
+  right: 50%;
+  display: flex;
+  z-index: 5000;
+
+}
+
+.form-control {
+  height:70%;
+  margin-top:4%;
+  margin-left:15%;
+}
+
 }
 </style>

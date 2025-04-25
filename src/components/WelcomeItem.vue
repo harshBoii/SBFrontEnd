@@ -100,7 +100,7 @@ margin-bottom: 5%;
 @media (max_width:768px){
     
     .text{
-        font-size: 6px;
+        font-size: 2vh;
     }
 }
 </style>

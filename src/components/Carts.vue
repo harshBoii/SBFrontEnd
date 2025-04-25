@@ -228,4 +228,30 @@ methods:{}
   transform: translateY(2px);
 }
 
+@media (max-width:768px) {
+
+    .button-30{
+        width: 18.3vh;
+    }
+    #Left{
+        width: 45%;
+        left: 17%;
+        
+    }
+    .text{
+        font-size: 1vh;
+        h1{
+            font-size: 3vh;
+        }
+    }
+    #Right{
+        font-size: 2vh;
+    }
+    #Info{
+        font-size: 0.7vh;
+    }
+    #Price{
+        font-size: 1vh;
+    }
+}
 </style>
