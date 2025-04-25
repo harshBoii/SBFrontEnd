@@ -27,7 +27,7 @@ const text=document.querySelector('.text');
  </p>
 <p></p>
 <router-link v-for="(label,index) in labels" :key="index" :to="links[index]" class="cont">
-   <i :class="icons[index]" style="font-size: 2rem"></i>
+   <i :class="icons[index]" style="font-size: 5vh"></i>
    <div class="text"> {{labels[index]}}</div>
 </router-link>
 
@@ -92,6 +92,7 @@ margin-bottom: 5%;
 .text{
     color: black;
     display: contain;
+    font-size: 1.5vh;
 
     
 }
