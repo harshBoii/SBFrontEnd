@@ -22,7 +22,7 @@ watch(Height, (newHeight) => {
   const rightElement = document.querySelector('.Right');
   const totalHeight = document.body.scrollHeight
   if (totalHeight>1600){
-    if (newHeight > 813) {
+    if (newHeight > 500) {
       leftElement.classList.add('show');
       rightElement.style.visibility = 'visible';
       rightElement.style.width = '96.5%';
