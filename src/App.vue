@@ -15,21 +15,11 @@ const handleScroll = () => {
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
   console.log("mounted");
-  if (totalHeight>1600){
-    if (newHeight > 500) {
-      leftElement.classList.add('show');
-      rightElement.style.visibility = 'visible';
-      rightElement.style.width = '96.5%';
-      rightElement.style.backgroundColor = 'white';  
-      rightElement.style.marginLeft = '3%';
+  const leftElement = document.querySelector('.Left');
+  const rightElement = document.querySelector('.Right');
+  const totalHeight = document.body.scrollHeight
 
-    } else {
-      leftElement.classList.remove('show');
-      rightElement.style.width = '100%';
-      rightElement.style.backgroundColor = 'black';
-    }
-  }
-  else{
+  if (totalHeight<1000){
     leftElement.classList.add('show');
       rightElement.style.visibility = 'visible';
       rightElement.style.width = '96%';
