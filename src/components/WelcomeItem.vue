@@ -19,7 +19,7 @@ const text=document.querySelector('.text');
 
 <template>
     
-<i class="pi pi-spin pi-sun" style="font-size: 2rem"></i>
+<i class="pi pi-spin pi-sun" style="font-size: 3vh"></i>
  <div class="text">Hey SunShine!
  </div>
  <p class="separator">
@@ -27,7 +27,7 @@ const text=document.querySelector('.text');
  </p>
 <p></p>
 <router-link v-for="(label,index) in labels" :key="index" :to="links[index]" class="cont">
-   <i :class="icons[index]" style="font-size: 5vh"></i>
+   <i :class="icons[index]" :style="{ fontSize: 'clamp(0.5vh, 3vw, 3vh)' }" ></i>
    <div class="text"> {{labels[index]}}</div>
 </router-link>
 
@@ -53,12 +53,12 @@ margin-bottom: 5%;
     text-align: center;
     margin-top:60% ;
     border-style: ridge ;
-    margin-right: 3.5%;
+    /* margin-right: 3.5%; */
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     height: 8%;
-    font-size: clamp(0.1rem,0.65rem,3rem);
+    /* font-size: clamp(0.18vh, 1.16vh, 5.33vh); */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -92,8 +92,7 @@ margin-bottom: 5%;
 .text{
     color: black;
     display: contain;
-    font-size: 1.5vh;
-
+    font-size: clamp(0.5vh,0.9vw, 1.5vh)
     
 }
 

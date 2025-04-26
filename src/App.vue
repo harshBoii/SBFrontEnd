@@ -79,7 +79,7 @@ body {
   height: 100%;
   z-index: 100;
   background-color: white;
-  border-right: 1.5px outset;
+  border-right: 0.25vh outset;
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 1s ease-out, opacity 2s ease-out;
