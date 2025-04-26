@@ -9,9 +9,10 @@ import Wishlist from '@/components/Wishlist.vue'
 import ContactUs from '@/components/ContactUs.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import MyPage from '@/components/MyPage.vue'
+import { createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
