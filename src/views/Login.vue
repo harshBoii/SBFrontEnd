@@ -400,8 +400,10 @@ button:hover{
 
 
 <script setup>
-import { Background, tsParticles } from 'tsparticles-engine';
-import { onMounted } from 'vue';
+import { tsParticles } from 'tsparticles-engine';
+import Swal from 'sweetalert2'
+
+
 onMounted:{
 (async()=>{
     await loadFireflyPreset(tsParticles);
@@ -448,14 +450,24 @@ async function Login(){
     const data=await res.json();
     if(data.ok){
         localStorage.setItem('Token',data['access_token'])
-        window.location.href='/';
-        alert('Welcome Back');
+        Swal.fire({
+                    title: 'Success!',
+                    text: 'You’ve logged in.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                  }).then(()=>{window.location.href='/'})
 
 
     }
     else{
-        alert(data['message']);
-        console.log(data);
+        Swal.fire({
+                    title: 'Error!',
+                    text: data.message,
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                  }).then(()=>{console.log(data)})
+
+        ;
     }
     }
 async function Signup(){
@@ -476,11 +488,22 @@ async function Signup(){
     })
     const data = await res.json()
     if (data.ok){
-        console.log(data);
-        alert('Welcome to Swarnabhushana');
-        this.$router.push('/');
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'You’ve Been Registered.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                  }).then(()=>{console.log(data)})
+
     }
     else{
-        alert(data.message);
+        console.log(data);
+        Swal.fire({
+                    title: 'Error!',
+                    text: data.message,
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                  }).then(()=>{this.$router.push('/login')})
+
     }}
 </script>

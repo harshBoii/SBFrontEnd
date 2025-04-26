@@ -1,4 +1,5 @@
 <script>
+import Swal from 'sweetalert2'
 
 export default{
     computed:{
@@ -39,13 +40,24 @@ export default{
         
         const result = await response.json();
         
-        if (response.ok && result.status === 200) {
-          alert('Added to Cart');
-          this.$store.dispatch('getCart')
-
-        } else {
-          alert(result.message || 'Error adding to cart');
+        if (response.ok && result.status === 200) 
+        {
+          Swal.fire({
+            title: 'Retry!',
+                    text: 'Login First',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                  });
         }
+        else
+                {
+          Swal.fire({
+            title: 'Success!',
+                    text: 'One Item Added.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                  }).then(()=>{this.$store.dispatch('getCart')})
+        } 
       } catch (error) {
         console.error('AddCart error:', error);
         alert('Network or server error');
@@ -67,12 +79,25 @@ export default{
           })
         })
         const result = await response.json();
-        if (response.ok && result.status === 200) {
-          alert('Removed from Cart');
-          this.$store.dispatch('getCart')
-        } else {
-          alert(result.message || 'Error removing from cart');
+        if (response.ok && result.status === 200) 
+        {
+          Swal.fire({
+            title: 'Retry!',
+                    text: 'Login First',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                  });
         }
+        else
+                {
+          Swal.fire({
+            title: 'Success!',
+                    text: 'One Item Removed.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                  }).then(()=>{this.$store.dispatch('getCart')})
+        } 
+
       
 }
 }
