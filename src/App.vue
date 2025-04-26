@@ -19,7 +19,7 @@ onMounted(() => {
   const rightElement = document.querySelector('.Right');
   const totalHeight = document.body.scrollHeight
 
-  if (totalHeight<1000){
+  if (totalHeight<1000 && this.$route.path!='/'){
     leftElement.classList.add('show');
       rightElement.style.visibility = 'visible';
       rightElement.style.width = '96%';
