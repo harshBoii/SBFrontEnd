@@ -16,6 +16,10 @@ const store = createStore({
         },
         setUser(state,user){
           state.user=user
+        },
+        removeCart(state){
+          state.Cart=[]
+          localStorage.removeItem('Token')
         }
    },
    actions:{
@@ -40,6 +44,7 @@ const store = createStore({
       const response = localStorage.getItem('Token')
       commit('setUser',response)
     }
+    
     
    },
    getters:{

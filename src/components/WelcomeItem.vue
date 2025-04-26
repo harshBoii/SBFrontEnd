@@ -2,10 +2,10 @@
 <script>
 export default{
 data(){return{
-    labels:['Cart','Account','Home','Wishlist','Contact Us','About Us'],
-    icons:['pi pi-shopping-cart','pi pi-user','pi pi-home','pi pi-heart','pi pi-envelope','pi pi-info-circle'],
+    labels:['Home','Cart','Sign In','My Account','Contact Us','About Us'],
+    icons:['pi pi-home','pi pi-shopping-cart','pi pi-user','pi pi-heart','pi pi-envelope','pi pi-info-circle'],
     name:['Login'],
-    links:['/cart','/login','/','/wishlist','/contact-us','/about-us'],
+    links:['/','/cart','/login','/my-page','/contact-us','/about-us'],
 }}};
 
 
