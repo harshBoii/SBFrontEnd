@@ -7,7 +7,7 @@
     <main class="content">
       <section class="profile-section">
         <div class="profile-image">
-          <img src="../assets/default-profile.jpg" alt="Profile" />
+          <img src="" alt="Profile" />
         </div>
         <div class="profile-info">
           <h2 class="profile-name">{{ this.user[0] ? user[0].email : 'No Email Available' }}</h2>
